@@ -1,0 +1,38 @@
+/* Feature titles and highlights */
+.feature-title {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin: 1.5rem 0 0.5rem;
+    font-weight: 600;
+}
+
+.highlight {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .feature-title {
+        font-size: 1.1rem;
+        margin: 1.2rem 0 0.4rem;
+    }
+
+    .highlight {
+        font-size: 1.1rem;
+        margin-top: 1.2rem;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+    .feature-title {
+        font-size: 1rem;
+    }
+
+    .highlight {
+        font-size: 1rem;
+    }
+} 

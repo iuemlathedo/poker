@@ -1,0 +1,138 @@
+.guide-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.guide-title {
+    font-size: 30px;
+    color: var(--primary-color);
+    margin-top: 25px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #3498db;
+    text-align: center;
+    font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+    .guide-title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .guide-title {
+        font-size: 1.5rem;
+    }
+    
+    .breadcrumb {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .guide-title {
+        font-size: 22px;
+    }
+}
+
+.guide-section-title {
+    font-size: 20px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.guide-section-title .emoji {
+    font-size: 28px;
+}
+
+.guide-list {
+    list-style: none;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.guide-list li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.guide-list li:before {
+    content: ".";
+    color: #3498db;
+    font-size: 40px;
+    position: absolute;
+    left: 0;
+    top: -30px;
+}
+
+.guide-steps {
+    counter-reset: step-counter;
+    list-style: none;
+    padding-left: 20px;
+}
+
+.guide-steps li {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 35px;
+}
+
+.guide-steps li:before {
+    content: counter(step-counter);
+    counter-increment: step-counter;
+    background-color: #3498db;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.faq-answer {
+    color: #555;
+    padding-left: 20px;
+}
+
+.contact-info {
+    padding: 5px 0 10px;
+    border-radius: 8px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+} 
